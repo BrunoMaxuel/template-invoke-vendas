@@ -122,11 +122,11 @@ section {
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
-  inset: 0;
-  z-index: 999999;
+  overflow-y: hidden;
   overflow: hidden;
+  inset: 0;
+  z-index: 9999;
   background: var(--color-secondary);
-  transition: all 1.1s ease-out;
 }
 
 #preloader:before {
@@ -139,7 +139,7 @@ section {
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  animation: animate-preloader 1.5s linear infinite;
+  animation: animate-preloader 1.6s linear infinite;
 }
 
 @keyframes animate-preloader {
